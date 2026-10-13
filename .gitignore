@@ -1,0 +1,43 @@
+# ==============================================================================
+# Git Ignore Configuration: 16-bit Vedic Multiplier Project
+# ==============================================================================
+
+# Simulation Binaries & Waveforms (Icarus Verilog / GTKWave)
+simulation/*.vvp
+simulation/*.vcd
+simulation/*.log
+*.vvp
+*.vcd
+
+# AMD Vivado Project & Cache Artifacts
+*.jou
+*.log
+*.str
+.Xil/
+*.dcp
+*.rpt
+*.xml
+*.html
+*.bit
+*.bin
+
+# Vivado Auto-Generated Directories
+*/.Xil/
+*/ip_user_files/
+*/managed_ip_project/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# OS-Specific Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor Settings
+.vscode/
+.idea/
+*.swp
+*~
