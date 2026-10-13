@@ -1,16 +1,7 @@
-// ============================================================================
-// Module Name:  conventional_multiplier_tb
-// Project:      16-bit Vedic Multiplier
-// Architecture: Functional Verification Testbench (Self-Checking)
-// Description:  Testbench for the reference conventional multiplier
-//               (conventional_multiplier.v).
-// ============================================================================
-
 `timescale 1ns / 1ps
 
 module conventional_multiplier_tb;
 
-    // Testbench signals
     reg  [15:0] a;
     reg  [15:0] b;
     wire [31:0] product;
@@ -20,14 +11,12 @@ module conventional_multiplier_tb;
     integer fail_count;
     integer i;
 
-    // DUT instantiation
     conventional_multiplier u_dut (
         .a(a),
         .b(b),
         .product(product)
     );
 
-    // Self-checking verification task
     task check_product;
         input [15:0] test_a;
         input [15:0] test_b;
